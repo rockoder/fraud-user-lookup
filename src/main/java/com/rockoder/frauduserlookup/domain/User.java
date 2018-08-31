@@ -3,13 +3,8 @@ package com.rockoder.frauduserlookup.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class User {
-  @JsonProperty("id")
   private String id;
-
-  @JsonProperty("email")
   private String email;
-
-  @JsonProperty("phone")
   private String phone;
 
   public User(@JsonProperty("id") String id,

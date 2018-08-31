@@ -5,10 +5,7 @@ import com.rockoder.frauduserlookup.domain.UserFraudScore;
 
 public class UserFraudScoreResponse {
 
-  @JsonProperty("userId")
   private String userId;
-
-  @JsonProperty("score")
   private UserFraudScore score;
 
   public UserFraudScoreResponse(@JsonProperty("userId") String userId) {

@@ -6,30 +6,19 @@ import java.time.LocalDateTime;
 
 public class NewUserRequest {
 
-  @JsonProperty("user")
   private User user;
-
-  @JsonProperty("registrationTime")
   private LocalDateTime registrationTime;
-
-  @JsonProperty("captchaReattempts")
   private Integer captchaReattempts;
-
-  @JsonProperty("ipAddress")
   private String ipAddress;
-
-  @JsonProperty("isEmailVerified")
   private Boolean isEmailVerified;
-
-  @JsonProperty("isMobileVerified")
   private Boolean isMobileVerified;
 
-  public NewUserRequest(@JsonProperty("user") User user,
-      @JsonProperty("registrationTime") LocalDateTime registrationTime,
-      @JsonProperty("captchaReattempts") Integer captchaReattempts,
-      @JsonProperty("ipAddress") String ipAddress,
-      @JsonProperty("isEmailVerified") Boolean isEmailVerified,
-      @JsonProperty("isMobileVerified") Boolean isMobileVerified) {
+  public NewUserRequest(@JsonProperty(value = "user", required = true) User user,
+      @JsonProperty(value = "registrationTime", required = true) LocalDateTime registrationTime,
+      @JsonProperty(value = "captchaReattempts", required = true) Integer captchaReattempts,
+      @JsonProperty(value = "ipAddress", required = true) String ipAddress,
+      @JsonProperty(value = "isEmailVerified", required = true) Boolean isEmailVerified,
+      @JsonProperty(value = "isMobileVerified", required = true) Boolean isMobileVerified) {
     this.user = user;
     this.registrationTime = registrationTime;
     this.captchaReattempts = captchaReattempts;

@@ -22,11 +22,11 @@ class User {
 
 # Build and Run
 
-To build:
+To build:  
 `gradle build`
 
-To run tests:
+To run tests:  
 `gradle test`
 
-To run:
+To run:  
 `gradle bootRun`
