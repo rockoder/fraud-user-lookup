@@ -1,0 +1,18 @@
+server:
+  port: 9000
+
+app:
+  id: "@project.artifactId@"
+  version: "@project.version@"
+  name: "@project.name@"
+  description: "@project.description@"
+  build_date: "@timestamp@"
+  schema_version: "@project.version@"
+  debug: false # logs all exception traces
+
+fraudlookup:
+  strategy: "fraudCheckSimpleStrategy"
+
+---
+spring:
+  profiles: test

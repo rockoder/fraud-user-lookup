@@ -23,8 +23,11 @@ repositories {
 	mavenCentral()
 }
 
-
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile('commons-validator:commons-validator:1.6')
+	testCompile('com.jayway.restassured:rest-assured:2.5.0')
+	testCompile('com.jayway.restassured:json-schema-validator:2.5.0')
+	testCompile(group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3')
 }
