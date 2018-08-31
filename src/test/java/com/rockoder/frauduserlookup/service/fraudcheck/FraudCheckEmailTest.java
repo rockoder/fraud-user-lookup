@@ -1,15 +1,8 @@
 package com.rockoder.frauduserlookup.service.fraudcheck;
 
-import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
 
-import com.jayway.restassured.http.ContentType;
-import com.jayway.restassured.response.Response;
-import com.rockoder.frauduserlookup.FraudUserLookupApplication;
-import com.rockoder.frauduserlookup.FraudUserLookupApplicationTests;
-import com.rockoder.frauduserlookup.IntegrationTestCase;
 import com.rockoder.frauduserlookup.builder.domain.NewUserRequestBuilder;
 import com.rockoder.frauduserlookup.builder.domain.UserBuilder;
 import com.rockoder.frauduserlookup.domain.User;
@@ -18,13 +11,6 @@ import com.rockoder.frauduserlookup.request.v1.NewUserRequest;
 import java.time.LocalDateTime;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpStatus;
-import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.context.junit4.SpringRunner;
 
 public class FraudCheckEmailTest {
 

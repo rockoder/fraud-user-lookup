@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(
     webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-    classes = {FraudUserLookupApplication.class, FraudUserLookupApplicationTests.class}
+    classes = {FraudUserLookupApplication.class}
 )
 @ActiveProfiles("testing")
 @DirtiesContext
