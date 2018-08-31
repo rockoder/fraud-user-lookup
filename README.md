@@ -1,4 +1,4 @@
-# Problem Statement
+# 1. Problem Statement
 
 * Design and implement a user fraud check module
 * See below a sample of User class as a starting point (feel free to change the class as you see fit)
@@ -20,7 +20,7 @@ class User {
 }
 ```
 
-# Build and Run
+# 2. Build and Run
 
 To build:  
 `gradle build`
